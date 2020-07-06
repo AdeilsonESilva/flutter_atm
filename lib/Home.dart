@@ -1,11 +1,48 @@
+import 'package:atm_consultoria/TelaCliente.dart';
+import 'package:atm_consultoria/TelaContato.dart';
+import 'package:atm_consultoria/TelaEmpresa.dart';
+import 'package:atm_consultoria/TelaServico.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  void _abrir(String tipo) {
-    print('tipo: $tipo');
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
 
+class _HomeState extends State<Home> {
+  void _abrir(String tipo) {
     switch (tipo) {
       case 'empresa':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TelaEmpresa(),
+          ),
+        );
+        break;
+      case 'servico':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TelaServico(),
+          ),
+        );
+        break;
+      case 'cliente':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TelaCliente(),
+          ),
+        );
+        break;
+      case 'contato':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TelaContato(),
+          ),
+        );
         break;
       default:
         new Exception('Tipo não definido');

@@ -51,6 +51,12 @@ flutter:
     - assets/images/menu_contato.png
     - assets/images/menu_empresa.png
     - assets/images/menu_servico.png
+    - assets/images/detalhe_cliente.png
+    - assets/images/detalhe_contato.png
+    - assets/images/detalhe_empresa.png
+    - assets/images/detalhe_servico.png
+    - assets/images/cliente1.png
+    - assets/images/cliente2.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
